@@ -1,0 +1,102 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+}
+/* Specificity example */
+p {
+    color: red;
+  }
+  
+  #my-id {
+    color: blue;
+  }
+  /* Bad example of overly specific CSS selector */
+.article #comments ul > li > a.button {
+    /* Styles */
+    color:grey
+    
+  }
+h3{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      
+}
+h3{   color: blue !important; /* This color will be applied to all paragraphs regardless of other rules */
+  
+}
+  #my-id {
+    color: red; /* This color will be overridden by the !important rule above */
+  }
+  img {
+    float: right;
+    margin: 0 0 10px 10px;
+  }
+  div {
+    position: relative;
+    z-index: 2; /* This div will appear in front of other elements with lower z-index values */
+  }
+
+.below{
+    position: relative;
+  z-index: 1; 
+}
+button {
+    background-color: teal;
+    align-self: center;
+    transition: background-color 0.5s ease-out;
+  }
+  
+  button:hover {
+    background-color: red;
+  }
+  /* Example of a media query in CSS3 */
+/* The following CSS will apply to screens with a maximum width of 600 pixels */
+@media screen and (width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  /* CSS Grid Example */
+/* CSS Grid Example */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  /* Container Example */
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Flexbox Example */
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .flex-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius:
